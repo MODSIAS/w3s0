@@ -1,57 +1,34 @@
-<header>
+Web3 Crypto Streaming Service
+============================
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+A blockchain-based streaming service with cryptocurrency payment integration.
 
-# GitHub Pages
+Features:
+- Stripe payment processing integration
+- Token-based access system 
+- Secure payment handling
+- Currency conversion support
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+Setup:
+1. Install dependencies:
+   npm install stripe
 
-</header>
+2. Configure Stripe:
+   - Replace 'your-stripe-secret-key' in paymentService.js with your actual Stripe secret key
+   - Ensure you have a Stripe account and API access
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+3. Environment Setup:
+   - Node.js 14+ recommended
+   - Secure environment for API keys
+   - HTTPS enabled for production
 
-## Finish
+Usage:
+The payment service provides two main functions:
+- processPayment: Handle direct payments via Stripe
+- increaseTokens: Purchase and add tokens to user accounts
 
-_Congratulations friend, you've completed this course!_
+For detailed API documentation, please refer to the code comments in paymentService.js.
 
-<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
-
-Your blog is now live and has been deployed!
-
-Here's a recap of all the tasks you've accomplished in your repository:
-
-- You enabled GitHub Pages.
-- You selected a theme using the config file.
-- You learned about proper directory format and file naming conventions in Jekyll.
-- You created your first blog post with Jekyll!
-
-### What's next?
-
-- Keep working on your GitHub Pages site... we love seeing what you come up with!
-- We'd love to hear what you thought of this course [in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+Security Note:
+Never commit API keys or sensitive credentials to version control.
+Always use environment variables for production deployments.
